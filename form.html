@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Form </title>
+</head>
+<body>
+    <form>
+         <!--name and value attributes are very important to a form.. if they r missing then the data from the form will not be forwarded to anywhere may b to next page or to datbase  -->
+         <!-- text is the default ‘type’ attribute of <input> element? -->
+         <!-- <input type="UserName" name="UserName"> -->
+         <!-- <input type="Password" name="Password"> -->
+         <!-- <input type="submit" name="submit"> -->
+         <!-- Adding "required" make it compulsory to be filled out when submitting the form -->
+
+    	<div>
+    	<label for="UserName"> <b> Email </b></label> <br>
+    	 <!-- <input type="text" id="UserName" required> -->
+    	 <!-- <input type="number" id="UserName" required> -->
+    	 <!-- <input type="time" id="UserName" required> -->
+    	 <!-- <input type="email" id="UserName" required> -->
+    	 <!-- <input type="url" id="UserName" required> -->
+    	 <!-- <input type="range" id="UserName" required  min = "50" max = "100" step="10"> -->
+    	 <input type="email" name="UserName" id="UserName" required placeholder="abc@example.com">
+
+    	 </div>
+    	 <div>
+    	 	<label for="country "> <b>Country </b> </label><br>
+    	 <input type="text" name="Country" id="country"required value="India" disabled>
+    	 </div>
+    	 <div>
+    	 	<label for="Password "> <b>Password </b> </label><br>
+    	 <input type="Password" name="Password" id="Password"required>
+    	 </div>
+    	 
+    	 <div>
+    	 	<label for="submit "> <b>submit </b></label> <br>
+    	 <input type="submit" name="submit" id="submit">
+    	 </div>
+         
+        <button onclick="alert('Learn HTML')" >Click ME</button> <br>
+        <button onclick="location.href='http://google.com';" >ClickTo</button> <br>
+        <audio controls>
+           <source src="cn.avi" type="audio/avi">
+           <source src="cn.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+        </audio> <br>
+
+        <video controls height="200px" width="200px">
+           <!-- <source src="cn.avihttps://www.youtube.com/watch?v=qCEv2XcOZLg" type="video/avi"> -->
+           <source src="https://www.facebook.com/archana.jha.7712/videos/3221778287909015" type="video/mpeg">
+              Your browser does not support the video element.
+        </video>
+         <!-- button................................. -->
+        <form>
+         <p> Gender </p>
+<!-- to group all the radio buttons together to achive the property of radio we need to provide them a common name
+name and value attributes r for passing the value to the particular name when data will be forwarded we will use name property for further dealing.. and both r very much reqd -->
+         <input type="radio" name="Gender" value = "Female" checked>  Female<br>
+         <input type="radio" name="Gender" value = "Male"> Male <br>
+         <input type="radio" name="Gender" value = "Other"> Other<br>
+         <input type="submit" name="submit">
+<!-- here name property is not for grouping..name can be different here.. here it is used just for passing the value to the particular name when data will be forwarded we will use name property for further dealing  -->
+         <p>Courses Enrolled</p>
+         <input type="Checkbox" name="Courses" value="c++" > C++ <br>
+         <input type="Checkbox" name="Courses1" value="java" > java <br>
+         <input type="Checkbox" name="Courses2" value="Web D" > Web D <br>
+          <input type="submit" name="submit">
+
+        <!-- dropdown list -->
+        <p> Month_Name1 </p>
+<!-- multiple and selected are boolean options (selected to give default value otherwise it will stor the first entry as default entry) -->
+        <select name="Month_Name"> 
+            <option> Jan </option> <br>
+            <option selected> Feb </option> <br>
+            <option> Mar </option> <br>
+            <option> Apr </option> <br>
+        </select>
+
+         <p> Month_Name2 </p>
+<!-- multiple and selected are boolean options (multiple for selecting multiple values)-->
+        <select name="Month_Name" multiple> 
+            <option> Jan </option> <br>
+            <option selected> Feb </option> <br>
+            <option> Mar </option> <br>
+            <option> Apr </option> <br>
+        </select>
+         
+
+         <!-- textarea -->
+        <p> Share Your Experience </p>
+        <textarea name="example" rows="5" cols="5"></textarea> <br>
+
+        <!-- types of button 1) submit 2)button  3) reset -->
+
+        <input type="button" name="button" value="button1">
+        <button type="button" name = "button2"> button 2</button>
+        <!-- the above two lines surves almost the same purpose but the following can b achieved via 2nd line only -->
+        <button type="button3" name = "button3">  <img src = "photo-1518837695005-2083093ee35b.img"></button>
+     </form>
+     
+
+ </form>
+</body>
+</html>
